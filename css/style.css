@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
 #header {
     background: #333;
     color: #fff;
@@ -37,7 +42,46 @@
     font-size: 18px;
 }
 
-@media(max-width:500px) {
+.container-content {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.container-content>div {
+    display: grid;
+    justify-content: center;
+}
+
+div h2 {
+    font-size: 1.7rem;
+    margin-top: 20px;
+}
+
+input[type="email"],
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    padding: 10px 30px;
+    background-color: rgb(33, 150, 245);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+input[type="email"] {
+    padding: 5px 30px 5px 10px;
+}
+
+@media(max-width:575px) {
     #header {
         display: grid;
         justify-content: center;
