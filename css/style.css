@@ -55,6 +55,28 @@ body {
     border-radius: 5px;
 }
 
+#features .feature {
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.description p {
+    font-size: 1.1rem;
+}
+
+.description h2 {
+    font-size: 1.8rem;
+}
+
+.icon .fas {
+    color: rgb(33, 150, 245);
+}
+
 .btn:hover {
     cursor: pointer;
 }
@@ -233,6 +255,18 @@ input[type="email"] {
     }
 
     .container-content>div h2 {
+        text-align: center;
+    }
+
+    #features .feature {
+        grid-template-columns: 1fr;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .description {
         text-align: center;
     }
 }
