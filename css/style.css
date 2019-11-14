@@ -21,13 +21,8 @@
     align-items: center;
 }
 
-#header>div h1 {
-    padding: 10px 10px;
-    color: #f4f4f4;
-}
-
 #header>div #header-img {
-    padding: 20px 0;
+    width: 100px;
 }
 
 #nav-bar ul li {
@@ -40,4 +35,27 @@
     text-decoration: none;
     color: #fff;
     font-size: 18px;
+}
+
+@media(max-width:500px) {
+    #header {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #header>div {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #nav-bar ul {
+        margin-bottom: 10px;
+    }
+
+    #nav-bar ul li {
+        display: block;
+    }
 }
